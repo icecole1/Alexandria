@@ -70,7 +70,7 @@ jobs:
     #    uses a compiled language
 
     - run: |
-       dotnet build ./alexandria -p:Version=v4.7.2 /p:UseSharedCompilation=false
+       dotnet build ./alexandria.sln -p:Version=v4.7.2 /p:UseSharedCompilation=false
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@main
 
